@@ -15,8 +15,7 @@ einem eigenen, abgeschlossenen Commit
 Commits nochmal auf (mittels "git rebase -i") :
 
 * umsortieren der Commits
-* zusammenfassen von zu kleinen Commits bzw. aufbrechen von
-Commits, die unrelated Changes enthalten
+* zusammenfassen von zu kleinen Commits bzw. aufbrechen von Commits, die unrelated Changes enthalten
 * ordentliches Ausformulieren der Commit-Messages
 
 Der Vorteil dieser Methode ist, dass die History nachher schön
