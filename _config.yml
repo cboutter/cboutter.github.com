@@ -3,8 +3,8 @@
 # ----------------------- #
 
 url: http://cboutter.github.io
-title: Home of the boutta
-subtitle: Some of my thoughts (mostly about programming)
+title: Christophe Boutter
+subtitle: 
 author: Christophe Boutter
 simple_search: http://google.com/search
 description:
@@ -19,7 +19,7 @@ date_format: "ordinal"
 subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
-email:
+email: boutta@gmail.com
 
 # ----------------------- #
 #    Jekyll & Plugins     #

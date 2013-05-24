@@ -1,0 +1,6 @@
+[submodule ".themes/BlogTheme"]
+	path = .themes/BlogTheme
+	url = https://github.com/rastersize/BlogTheme.git
+[submodule ".themes/greyshade"]
+	path = .themes/greyshade
+	url = git@github.com:shashankmehta/greyshade.git
