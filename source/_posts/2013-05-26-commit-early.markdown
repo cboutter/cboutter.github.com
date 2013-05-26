@@ -1,5 +1,11 @@
-## Commit early, commit often
-
+---
+layout: post
+title: "Commit Early, Commit Often"
+date: 2013-05-26 12:51
+comments: true
+published: false
+categories: 
+---
 Draft nach mail von Dirk:
 * zum Thema "commit early commit often" und "die richtige Größe für
 Commits" gefällt mir bei Git sehr gut, dass man (lokal) die History
@@ -21,17 +27,3 @@ Commits nochmal auf (mittels "git rebase -i") :
 Der Vorteil dieser Methode ist, dass die History nachher schön
 aufgeräumt (und damit gut durchsuchbar) ist und dass man trotzdem
 während der Entwicklung jederzeit "Sicherheitssnapshots" machen kann
-
-## Give Us A Team
-
-Previous title: What we can learn from Github
-
-Social coding is important -> team aspect
-
-## Probleme mit "collective" code ownership
-
-## Motivationsbremsen in (agilen) Teams
-
-- keine Arbeit
-- haeufige Teamwechsel
-- fehlende Richtungsvorgaben
