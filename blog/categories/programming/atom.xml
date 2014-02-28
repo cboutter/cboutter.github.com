@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Programming | Christophe Boutter]]></title>
+  <link href="http://cboutter.github.com/blog/categories/programming/atom.xml" rel="self"/>
+  <link href="http://cboutter.github.com/"/>
+  <updated>2014-02-28T15:33:19+01:00</updated>
+  <id>http://cboutter.github.com/</id>
+  <author>
+    <name><![CDATA[Christophe Boutter]]></name>
+    <email><![CDATA[boutta@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Bestehende Software Refactoren Mit Hilfe Von TDD]]></title>
+    <link href="http://cboutter.github.com/blog/2012/12/18/bestehende-software-refactoren-mit-hilfe-von-tdd/"/>
+    <updated>2012-12-18T17:11:00+01:00</updated>
+    <id>http://cboutter.github.com/blog/2012/12/18/bestehende-software-refactoren-mit-hilfe-von-tdd</id>
+    <content type="html"><![CDATA[<p>Wer als Entwickler schon mal das Glück hatte an einem neuen Projekt mitzuarbeiten, weiss wie schön das sein kann. Leider ist dies eher die Ausnahme. Der Normalfall ist der, dass man an einem schon bestehenden Softwaresystem arbeitet. Je nach Alter und Qualität des Codes findet man mehr oder weniger Tests vor. Der Regelfall ist eher der mit weniger Tests. Ich möchte für zwei Vorgehen schildern wie TDD das Arbeiten an Bestandscode vereinfachen kann. TDD bedeutet “Test Driven Development” oder auch Test First genannt. Konkret ist damit gemeint, dass man zuerst einen Test schreibt und der in der Folge entstehende Code diesen Test verifiziert. Dieser Artikel soll keine Einleitung zu TDD sein, wer mehr wissen will findet bei <a href="http://de.wikipedia.org/wiki/Testgetriebene_Entwicklung">Wikipedia</a> einen guten Einstieg.</p>
+
+<p>Der erste Fall ist das Fixen eines Bugs. Bei dieser Arbeit geht es darum, dass der Bug zum Einen behoben wird, aber auch dass er nicht wieder in kommenden Versionen eingebaut werden kann. Wenn er einen neuen Bug bekommt, versucht jeder Entwickler zuerst den Bug zu reproduzieren. Wenn dieser Schritt geschafft ist, weiß man als Entwickler wie der Bug auftritt. Der nächste Schritt, wenn man mit Test-Unterstützung arbeiten will, ist den Bug automatisiert anhand eines Tests zu reproduzieren. Dieser Test sollte eine Prüfung (assertion) des Fehlers beinhalten und diese Prüfung sollte zunächst fehlschlagen. Wir haben also einen roten Test. In der Folge wird der eigentliche Bug gefixt. Das Ergebnis ist dann, dass der soeben geschriebene Test wieder grün ist. Der Test sollte mit in die Versionskontrolle eingecheckt werden und auch bei jedem Build-Vorgang laufen. Auf diesem Weg stellen wir sicher, dass sich der selbe Bug nicht wieder einschleichen kann.</p>
+
+<p>Der zweite Fall ist das Refactoring von bestehendem Code. Auch in diesem Fall helfen Tests. Wenn schon welche vorhanden sind hat man es einfacher. Sollten noch keine Tests vorhanden sein, müssen erst welche erstellt werden die das Verhalten der Software abprüfen. Eine gute Anleitung hierzu findet man im <a href="http://www.alexbolboaca.ro/wordpress/software-development/i-love-legacy-code">Blog von Alexandru Bolboaca</a>. Wenn nun erste Tests erstellt sind, welche die Funktionalität der Software verifizieren, kann man das Refactoring angehen. Zuerst verifiziert man, dass die Software richtig funktioniert anhand der Tests. Dann kann man den Code in kleinen Schritten refactoren. Zwischen jedem dieser Schritte wird immer wieder anhand der Tests kontrolliert, ob die Software immer noch korrekt läuft. Wenn dies der Fall ist, geht man weiter zum nächsten Schritt. Sollte dies nicht der Fall sein, wird der Schritt zurück genommen (am Besten mit Hilfe des Versionskontrollsystems, daher immer einchecken) oder man versucht den aufgetretenen Fehler zu beheben.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Why Use A DVCS?]]></title>
+    <link href="http://cboutter.github.com/blog/2012/06/08/why-use-a-dvcs/"/>
+    <updated>2012-06-08T16:56:00+02:00</updated>
+    <id>http://cboutter.github.com/blog/2012/06/08/why-use-a-dvcs</id>
+    <content type="html"><![CDATA[<p>In the past years I often reflected about how to manage source code versioning in an optimal way. Not so long ago my mental model was kind of limited due to scarce tool support (at least non-commercial ones). Using Subversion (or even CVS) isn't what gets you to branch often. Branching isn't that hard, but merging is. But this brings further problems. Ever since using an iterative (read agile) development approach, I encountered unfinished features (or user stories) at the end of the iteration. Since non-delivery of the completed features wasn't an option at any time, the team had to remove the unfinished work from the product. The code remained unfinished in the repository, it was just disabled.</p>
+
+<p>This isn't a satisfactory situation by any means. Since reading the article from Henrik Kniberg about <a href="http://www.infoq.com/articles/agile-version-control">Agile version control</a> I began to develop some ideas on the way I wanted it to be. A very similar approach is described in this <a href="http://nvie.com/posts/a-successful-git-branching-model/">post</a> from Vincent Driessen. Vincent explains his approach based on Git, but principally it would work using any SCM. Practically only a DVCS like <a href="http://git-scm.com">Git</a>, <a href="http://mercurial.selenic.com">Mercurial</a> or <a href="http://bazaar.canonical.com/">Bazaar</a> will work well. Vincent recommends using separate feature branches for every feature. This facilitates many things, especially the selective integration of features into a release. Thus at the moment of building a release the team can cherry pick every single feature it wants to be part of the release. Even finished ones can be left out for a later release. Without feature branches this isn't possible. Scott Chacon advocates a <a href="http://scottchacon.com/2011/08/31/github-flow.html">simpler workflow</a> which can be better suited, especially for web development.</p>
+
+<p>Two things are important when using feature branches in development. First, it must be very easy to switch from one branch to another. When I say easy, I don't mean check out the whole workspace and fire up your preferred IDE a second time. This is not what I call easy and costs way too much time. In any DVCS a branch-change is only one command in a shell. Since most IDEs and editors will automatically reload their content, nothing more is needed. The second important thing is merging. If it isn't easy you won't do it. But you must do it often because the other developers need to get the changes as early as possible. Furthermore a merge with 100 changesets can be painful too. So don't let it get that big.</p>
+
+<p>Not only merges should be small, changesets too should be small. Maybe you've heard or read the following phrase already: check in early, check in often. It should be told to everyone new to version control. This means that every finished work unit should be committed. In this way you can always track back your steps in small increments if something went wrong. Say the build just broke, it will be easier to find which line of code broke the build if the last change is small. But choose the scope of the changeset wisely. It should be as small as possible, but so large as to be self-contained and able to build. In order to get a good changeset it is useful to "know your next commit" as said by Dan Bergh Johnsson in <a href="http://www.amazon.de/Things-Every-Programmer-Should-Know/dp/0596809484/">97 Things Every Programmer Should Know</a>. This will lead to a very focussed working style.</p>
+
+<p>We've seen many of the advantages of DVCS. But I haven't told the best, you can commit locally. This means no waiting for a slow network, no problem with a server downtime and the possibility the keep a whole change history for yourself until ready to be shared. Hopefully many more companies will do the transition in the coming years, everyone will benefit greatly.</p>
+
+<p>If you want to know more, the <a href="http://git-scm.com">Git homepage</a> has a very good documentation or go to <a href="http://hginit.com/">hginit</a> for an introduction to Mercurial.</p>
+]]></content>
+  </entry>
+  
+</feed>

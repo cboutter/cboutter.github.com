@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: GTD | Christophe Boutter]]></title>
+  <link href="http://cboutter.github.com/blog/categories/gtd/atom.xml" rel="self"/>
+  <link href="http://cboutter.github.com/"/>
+  <updated>2014-02-28T15:33:19+01:00</updated>
+  <id>http://cboutter.github.com/</id>
+  <author>
+    <name><![CDATA[Christophe Boutter]]></name>
+    <email><![CDATA[boutta@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[My Experience With Bullet Journal]]></title>
+    <link href="http://cboutter.github.com/blog/2014/01/31/my-experience-with-bullet-journal/"/>
+    <updated>2014-01-31T13:28:00+01:00</updated>
+    <id>http://cboutter.github.com/blog/2014/01/31/my-experience-with-bullet-journal</id>
+    <content type="html"><![CDATA[<p>I started using <a href="http://www.bulletjournal.com/">Bullet Journal</a> last year in november. It helps me getting my thoughts sorted out, since I can write down the thoughts and let them foster a bit. And since I'm a software developer, I have <a href="http://randsinrepose.com/archives/nadd/">N.A.D.D.</a> So bullet journal is a neat way to remember what I was doing before the newest interruption found me. OK, that's not the only way I get interruped, often some colleagues come along or the next meeting is scheduled. There are way more interruptions one would think. Before bullet journal interruptions were a big time waster, now I can almost immediately set up where I left. In the kanban setting it helps to know what I've done in the last weeks when doing a retrospective.</p>
+
+<p>I'm not using everything Ryder Carroll advocates in his guide. For example I don't use the calendar, I prefer using a digital one in my iPhone. Since I have also set up a <a href="http://www.personalkanban.com/">personal Kanban</a>, I don't use the monthly task system. Currently I'm logging into a <a href="http://www.x17.de/">X17</a> and I'm pretty happy with it. What I don't like, is that I cannot use whatever inlays I want, so I'll probably switch to <a href="http://www.roterfaden.de/">Roterfaden</a>.</p>
+
+<p>I'll probably write a follow-up post when I've used the system some more.</p>
+]]></content>
+  </entry>
+  
+</feed>

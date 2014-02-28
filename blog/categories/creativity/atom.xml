@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Creativity | Christophe Boutter]]></title>
+  <link href="http://cboutter.github.com/blog/categories/creativity/atom.xml" rel="self"/>
+  <link href="http://cboutter.github.com/"/>
+  <updated>2014-02-28T15:33:19+01:00</updated>
+  <id>http://cboutter.github.com/</id>
+  <author>
+    <name><![CDATA[Christophe Boutter]]></name>
+    <email><![CDATA[boutta@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Getting Creative For Designing A Job Ad]]></title>
+    <link href="http://cboutter.github.com/blog/2013/05/24/getting-creative-for-designing-a-job-ad/"/>
+    <updated>2013-05-24T10:25:00+02:00</updated>
+    <id>http://cboutter.github.com/blog/2013/05/24/getting-creative-for-designing-a-job-ad</id>
+    <content type="html"><![CDATA[<p>In a previous <a href="http://cboutter.github.io/blog/2012/05/30/how-to-excite-a-developer-about-a-position/">post</a> I gave a special job ad as an example of a way to excite a developer about a company/position. In this post I want to show you how we came to our current job ad.</p>
+
+<p>We always need good new people at our company. 6 months ago, we wanted to publish a new job ad and the CEO asked for some input. I had already written about the idea to craft an ad form source code. We had some short discussions if this could be an option for us and we settled to give it a try.</p>
+
+<p>Since we were looking for a Java developer, the obvious option was to choose Java code as medium. We sat together and agreed on some points we wanted to see in the ad. I began coding the ad in a typical Java fashion, the code wasn't that readable at this point. The transformation from source code to HTML was mainly done by hand. The result is depicted next.</p>
+
+<p><img src="images/posts/jobad_v1.png"></p>
+
+<p>After getting some good feedback from this version and still needing new people, a second version of the ad was to be published. We sat together again and discussed the content. The skills searched for didn't change much, but the presentation was to be redesigned. Our head of marketing wanted something more fancy, thus we chose a dark theme for the code background. Furthermore we wanted to have an ad that is easily readable. Therefore we chose a more fluent way to program our requirements.</p>
+
+<p>This time no hand conversion of the code to HTML. I used <a href="http://www.sublimetext.com/2">Sublime Text 2</a> with the <code>Print to HTML</code> package to convert the code to HTML and did some adjustments. But this time it was way less hassle. The result is shown below. We got great feeback again.</p>
+
+<p><img src="images/posts/jobad.png"></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How to excite a developer about a position]]></title>
+    <link href="http://cboutter.github.com/blog/2012/05/30/how-to-excite-a-developer-about-a-position/"/>
+    <updated>2012-05-30T17:06:00+02:00</updated>
+    <id>http://cboutter.github.com/blog/2012/05/30/how-to-excite-a-developer-about-a-position</id>
+    <content type="html"><![CDATA[<p>Everyone who has tried to get a new software developer for his team lately, knows what I'm talking about. Especially in Germany the discussion about experts lacking is an ongoing one. But this discussion isn't one sided, there are also some who say that the lack isn't such a great one. I won't take a side in this article, but something I'm sure about is, that it's growing more difficult to get new good developers.</p>
+
+<p>Since there aren't that many good developers, one needs first to get their attention. This isn't done by another dull job ad like those I got by the dozen from the many headhunters contacting me. The ad needs to be something special and to show the difference from other positions and other companies. This isn't achieved by listing the skills needed for this position and a short description. The ad has to get the attention of the potential applicant at first glance. I would recommend a color ad. It's much easier to get the attention this way. Furthermore the ad has to appeal to the passion of the applicant. Her passion is programming, so it has to be something programming related, maybe some pseudo code? Probably not a single non-programmer will get it, but isn't this the way geeks work?</p>
+
+<p>After having raised the attention of your new staff member -yes he's gonna be your new staff member- you need an application process which is going to further raise the expectation of this really great developer. Since we've got a lot of attention, we're not gonna only attract those really good developers. At this point it would be really good that the application process could help us easily select the really great. On how many applications were you requested to program in order to get one step further (see <a href="http://joelonsoftware.com/articles/GuerrillaInterviewing3.html">Joel's interviewing guide</a>)? Personally I wasn't requested once (Okay, I lied, Amazon did). So everyone can apply, even someone who can't program. So maybe we should make this the entry point of the application process, know how to program. The application itself should be a program, along with all the needed documentation of course.</p>
+
+<p>This way any dedicated programer can make a really great showcase of his talent. In order not to make it too easy I would impose a programming language that isn't used that often in your area. Over here one could use Ruby or Groovy or something similar. This application system should guarantee some other things. First, the code from different persons should be comparable, I would recommend using some kind of programming Framework. Second, the application code should be easily retrieved, my recommendation: use a VCS (hopefully something more up-to-date than CVS). Last, the application code should be easily tested, I could imagine that the application integrates itself into an existing Web-Platform, thus even a non-programer can get an idea about the applicant.</p>
+
+<p>Do not think that a job ad like any other will get you the results you expect. Be creative in order to get creative people working for you.</p>
+]]></content>
+  </entry>
+  
+</feed>
